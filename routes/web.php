@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/aa/{id}',function(){
+    return 111;
+});
+
+Route::resource('test','PostController');
